@@ -59,11 +59,11 @@ extension NativeAdVC: APDNativeAdLoaderDelegate {
             adChoicesView.rightAnchor.constraint(equalTo: nativeAdView.rightAnchor, constant: 8).isActive = true
         }
         ad.attach(to: nativeAdView, viewController: self)
-        self.view.makeToast("Native ad was downloaded automatically")
+        self.view.makeToast("Native ad was loaded automatically by APDNativeLoader. Tap on Show button.", position: .center)
     }
     
     func nativeAdLoader(_ loader: APDNativeAdLoader!, didFailToLoadWithError error: Error!) {
-        self.view.makeToast("Native ad failed to load")
+        self.view.makeToast("Native ad failed to load.")
     }
 }
 

@@ -20,7 +20,13 @@ class BannerAdVC: UIViewController {
     }
     
     func addBannerView() -> AppodealBannerView {
-        banner = AppodealBannerView(size: CGSize(width: 375, height: 80), rootViewController: self)!
+        if currentScreenWidth == iPhone5SEWidth {
+            banner = AppodealBannerView(size: kAppodealUnitSize_320x50, rootViewController: self)!
+        } else if currentScreenWidth == iPhone678XWidth {
+            banner = AppodealBannerView(size: CGSize(width: iPhone678XWidth, height: 80), rootViewController: self)
+        } else if currentScreenWidth == iPhonePlusWidth {
+            banner = AppodealBannerView(size: CGSize(width: iPhonePlusWidth, height: 80), rootViewController: self)
+        }
         banner.isHidden = true
         banner.setDelegate(self)
         self.view.addSubview(banner)
@@ -45,7 +51,6 @@ extension BannerAdVC: AppodealBannerViewDelegate  {
         NSLog("Banner view was loaded")
         self.view.makeToast("Banner view was loaded")
     }
-    
     func bannerViewDidRefresh(_ bannerView: APDBannerView!){
         NSLog("banner view was refreshed")
         self.view.makeToast("Banner view was refreshed")

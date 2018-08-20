@@ -15,6 +15,7 @@
 		5C638072212ACBD400DCC3AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C638070212ACBD400DCC3AF /* LaunchScreen.storyboard */; };
 		5C63807D212ACECE00DCC3AF /* BannerAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63807C212ACECE00DCC3AF /* BannerAdVC.swift */; };
 		5C63807F212ACEE000DCC3AF /* RewardedVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C63807E212ACEE000DCC3AF /* RewardedVideoVC.swift */; };
+		5C6C247D212AE71200F107F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6C247C212AE71200F107F5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5C638073212ACBD400DCC3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C63807C212ACECE00DCC3AF /* BannerAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdVC.swift; sourceTree = "<group>"; };
 		5C63807E212ACEE000DCC3AF /* RewardedVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedVideoVC.swift; sourceTree = "<group>"; };
+		5C6C247C212AE71200F107F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		830E04EFBEEC0D4978FC67A9 /* Pods_APDTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APDTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 			children = (
 				5C63806E212ACBD300DCC3AF /* Assets.xcassets */,
 				5C638073212ACBD400DCC3AF /* Info.plist */,
+				5C6C247C212AE71200F107F5 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6C247D212AE71200F107F5 /* Constants.swift in Sources */,
 				5C63807D212ACECE00DCC3AF /* BannerAdVC.swift in Sources */,
 				5C63806A212ACB9500DCC3AF /* NativeAdVC.swift in Sources */,
 				5C63807F212ACEE000DCC3AF /* RewardedVideoVC.swift in Sources */,

@@ -66,5 +66,3 @@ extension NativeAdVC: APDNativeAdLoaderDelegate {
         self.view.makeToast("Native ad failed to load.")
     }
 }
-
-
